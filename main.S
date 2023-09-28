@@ -19,7 +19,7 @@ main:
 	movdqu %xmm1, %xmm2
 	syscall
 	lea 1(%rip), %rsi
-	and %r9, %r8
+	and %rcx, %rcx
 	syscall
 	lea 3(%rip), %rsi
 	psignd %xmm1, %xmm2
